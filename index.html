@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="icon">
+            <img src="abstract-user-flat-1.png">
+        </div>
+        <br>
+        <input type="email" placeholder="USERNAME" id="username" required>
+        <br>
+        <input type="password" placeholder="PASSWORD" name="password" id="password" required>
+        <br>
+        <button onclick="verify()">LOGIN</button>
+        <br>
+    </div>
+    <script>
+        const setUserName = "vignesh@gmail.com";
+        const setPassword = "myPassword";
+        function verify() {
+            const username = document.querySelector("#username").value;
+            const password = document.querySelector("#password").value;
+            if (username == setUserName && password == setPassword) return window.alert("Login Success");
+            return window.alert("Login Failed");
+        }
+        
+    </script>
+
+</body>
+
+</html>
